@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- The head is for declaring all of the important information about your site -->
+    
+    <!-- charset specifies what character set you're using (https://www.w3schools.com/tags/att_meta_charset.asp) -->
+	<meta charset="utf-8">
+    <!-- viewport tells the browser what to make visible to the user when it first loads (https://www.w3schools.com/css/css_rwd_viewport.asp) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title tag sets the title of your tab -->
+	<title>Tab Title</title>
+
+    <!-- This brings in our external stylesheet so we don't have to put our css in our html page -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- We can use Bootstraps CSS files without downloading them using a cdn (Content Delivery Network) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Importing google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:300,400,600" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- NAVBAR -->
+        <div class="nav">
+            <div class="brandInfo"><div class="name" ><a href="#toTop">{{ WEBSITE }}</a></div></div>
+            <div class="menu-btn">
+                <div class="menu-toggle" onClick="toggleActive();">
+                    <span class="bars"></span>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#toTop">General</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JUMBOTRON/HEADER -->
+        <div id="toTop" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+
+        <!-- BODY CONTENT -->
+        <!-- Please remove the inline css and make any changes you want in the style.css -->
+        <div id="about" class="content" style="height: 400px; border: 5px solid lime;">
+            <h2>This is a box!</h2>
+            <div style="height:250px;width:250px;margin-left:auto;margin-right:auto;">
+                <img src="https://media.giphy.com/media/mCRJDo24UvJMA/source.gif" style="max-width:100%; max-height:100%">
+            </div>
+
+        </div>
+        <div id="faq" class="content" style="height: 400px; border: 5px solid magenta;">
+            <h3>This is the next BOX!</h3>
+            <button onClick=onPressHelloButton() class="btn btn-info">Hello!</button>
+            <br/><br/>
+            <form onsubmit="onSubmitForm()" class="form-group">
+                <label for="nameInput">What's your name?</label>
+                <input id="nameInput" type="text" name="name" placeholder="Name" class="form-control">
+                <label for="gradeInput">What grade are you in?</label>
+                <input id="gradeInput" type="text" name="grade" placeholder="12th" class="form-control">
+                <br>
+                <input class="btn btn-primary" id="formSubmit" type="submit" value="Submit">
+            </form> 
+        </div>
+        <div id="contact" class="content" style="height: 400px; border: 5px solid cyan;">
+            <h4>I am the last box!</h4>
+            <p>I have more info in my box.</p>
+            <div class="container-fluid scrollText">
+                <div class="row">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Amet tellus cras adipiscing enim eu. Vitae aliquet nec ullamcorper sit amet risus nullam eget. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Suspendisse sed nisi lacus sed viverra. Nam at lectus urna duis convallis convallis. Ullamcorper dignissim cras tincidunt lobortis feugiat. Morbi tincidunt ornare massa eget egestas. Ipsum dolor sit amet consectetur adipiscing. At imperdiet dui accumsan sit amet nulla facilisi. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Feugiat vivamus at augue eget.
+                    </p>
+                    <p>
+                        Tincidunt eget nullam non nisi. Augue eget arcu dictum varius duis. Enim nunc faucibus a pellentesque sit amet porttitor. Purus ut faucibus pulvinar elementum. Senectus et netus et malesuada fames. Aliquam sem et tortor consequat. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Orci porta non pulvinar neque laoreet suspendisse. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Id aliquet lectus proin nibh. Adipiscing bibendum est ultricies integer quis. Netus et malesuada fames ac turpis egestas maecenas.
+                    </p>
+                    <p>
+                        A arcu cursus vitae congue. Morbi non arcu risus quis varius quam quisque. Nibh tellus molestie nunc non blandit massa enim nec dui. Ultricies mi eget mauris pharetra. Montes nascetur ridiculus mus mauris vitae ultricies leo. Mattis molestie a iaculis at. Volutpat maecenas volutpat blandit aliquam. Sed turpis tincidunt id aliquet risus feugiat in. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Euismod nisi porta lorem mollis. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Scelerisque viverra mauris in aliquam sem. Quis imperdiet massa tincidunt nunc. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Vitae purus faucibus ornare suspendisse.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="credit">
+                &copy; 2019 {{ YOUR NAME HERE }}
+            </div>
+        </div>
+    </div>
+
+
+    <!-- We want to keep our script tags at the bottom of our body tag so they load last. Keep in mind that javascript loads in the order you declare it in this page. -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
